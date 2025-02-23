@@ -1,0 +1,106 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.List-header{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-bottom: 2px solid rgb(235, 23, 23);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+
+.List-items{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.task-input{
+    width: 75%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.task-input:focus{
+    background-color: rgb(212, 209, 209);
+}
+
+.add-button{
+    height: 35px;
+    width: 15%;
+    padding: 5px;
+    background-color: rgb(93, 187, 250);
+}
+.add-button:hover{
+    background-color: rgb(47, 85, 255);
+    transform: 0.5s;
+    cursor: pointer;
+}
+
+.Tasks{
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    scrollbar-color: grey transparent;
+}
+.Tasks::-webkit-scrollbar{
+    width: 12px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.Tasks::-webkit-scrollbar-thumb{
+    background: grey;
+}
+.Tasks:hover::-webkit-scrollbar{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.Tasks .Task{
+    background-color: rgb(129, 191, 248);
+    padding: 5px;
+    margin: 15px ;
+    width: 90%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Tasks .Task .Icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Tasks .Task .Icons .Icon:hover{
+    cursor: pointer;
+    color: black;
+}
+.Tasks .Task .Values{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Tasks .Task .Values span{
+    margin: 0px 2px;
+}
+.Tasks .Task .Values .Value-Icon:hover{ 
+    color: red;
+    cursor: pointer;
+}

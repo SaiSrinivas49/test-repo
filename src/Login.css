@@ -1,0 +1,60 @@
+.L-Head{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-bottom: 2px solid rgb(235, 23, 23);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+
+.L-Body{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid red;
+    padding: 20px 0px;
+}
+
+.L-input{
+    width: 75%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.L-input:focus{
+    background-color: rgb(212, 209, 209);
+}
+
+.L-button{
+    height: 35px;
+    width: 80%;
+    padding: 5px;
+    background-color: rgb(93, 187, 250);
+}
+.L-button:hover{
+    background-color: rgb(47, 85, 255);
+    transform: 0.5s;
+    cursor: pointer;
+}
+
+.L-footer{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.other-button{
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    outline: none;
+}
+.other-button:hover{
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}

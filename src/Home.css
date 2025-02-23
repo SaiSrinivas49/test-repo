@@ -1,0 +1,19 @@
+.Home-Header{
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.Home-items{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.Home-button{
+    width: 90%;
+    margin: 12px;
+    height: 15%;
+}
